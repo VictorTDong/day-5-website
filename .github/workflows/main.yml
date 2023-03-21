@@ -40,4 +40,10 @@ jobs:
 
     - name: Print inputs
       run: echo Inputs are ${{ inputs.version_number }} ${{ inputs.description }}
+    
+    - name: Crush images
+      uses: crush-pics/crush-pics-github-action@master
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        api-key: ${{ secrets.CRUSH_API_KEY }}
 
