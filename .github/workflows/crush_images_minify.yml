@@ -1,4 +1,4 @@
-name: Crush images
+name: Crush images and Minify Files
 on:
   workflow_dispatch:
   
