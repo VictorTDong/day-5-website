@@ -39,4 +39,8 @@ jobs:
         publish_dir: site
 
     - name: Print inputs
-      run: echo Inputs are ${{ inputs.version_number }} ${{ inputs.description }} 
+      run: echo Inputs are ${{ inputs.version_number }} ${{ inputs.description }}
+
+    - name: Image Optimizer
+      uses: crush-pics/crush-pics-github-action@v1.0
+
